@@ -1,0 +1,24 @@
+
+<table class='table '>
+    <thead class='thead-dark'>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Raza</th>
+            <th>Años</th>
+            <th>Foto</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each caballos}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{nombre}}</td>
+                <td>{{raza}}</td>
+                <td>{{anios}}</td>
+                <!-- <td><button class="foto-caballo" name="fotoCaballo"id={{id}} url={{url}}>Ver foto</button></td> -->
+                <td><a href="{{url}}" target="_blank">Ver foto</a></td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
